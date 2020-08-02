@@ -4,11 +4,10 @@ USE database_oneturpial;
 
 -- USERS TABLE
 CREATE TABLE users (
-  id INT(11) NOT NULL,
-  firstname VARCHAR(30) NOT NULL,
-  lastname VARCHAR(30) NOT NULL,
   document_type VARCHAR(10) NOT NULL,
   id_number INT(11) NOT NULL,
+  firstname VARCHAR(30) NOT NULL,
+  lastname VARCHAR(30) NOT NULL,
   birth_date DATE NOT NULL
 )
 
