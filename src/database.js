@@ -2,10 +2,11 @@ const mysql = require('mysql')
 const dbConfig = require('./config/config')
 
 const connection = mysql.createPool({
-  host: dbConfig.HOST,
-  user: dbConfig.USER,
-  password: dbConfig.PASSWORD,
-  database: dbConfig.DB
+  host: 'localhost',
+  user: 'root',
+  password: '12345',
+  database: 'database_oneturpial',
+  insecureAuth: true
 })
 
 module.exports = connection
