@@ -1,4 +1,4 @@
-const sql = require("./db.js");
+const sql = require("../database");
 
 // constructor
 const Cars = function (car) {
