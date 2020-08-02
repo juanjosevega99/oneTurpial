@@ -24,11 +24,11 @@ export default class CarsList extends Component {
       <div className="row">
         {
           this.state.cars.map(car => (
-            <div className="col-md-4 p-2" key={car._id}>
+            <div className="col-md-4 p-2" key={car.user_id}>
               <div className="card">
                 <div className="card-header d-flex justify-content-between">
                   <h5>{car.modelo}</h5>
-                  <Link className="btn btn-secondary" to={'/edit/' + car._id}>
+                  <Link className="btn btn-secondary" to={'/edit/' + car.user_id}>
                     Edit
                   </Link>
                 </div>
@@ -38,7 +38,7 @@ export default class CarsList extends Component {
                   <p>{car.marca}</p>
                 </div>
                 <div className="card-footer">
-                  <button className="btn btn-danger" onClick={() => this.deleteCar(car._id)}>
+                  <button className="btn btn-danger" onClick={() => this.deleteCar(car.user_id)}>
                     Delete
                   </button>
                 </div>
