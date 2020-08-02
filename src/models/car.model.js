@@ -17,12 +17,12 @@ Cars.create = (newCar, result) => {
     }
 
     console.log("created car: ", { id: res.insertId, ...newCar });
-    result(null, { id: res.insertId, ...newCar });
+    result(null, { placa: res.insertPlaca, ...newCar });
   });
 };
 
 Cars.findById = (carId, result) => {
-  sql.query(`SELECT * FROM cars WHERE id = ${carId}`, (err, res) => {
+  sql.query(`SELECT * FROM cars WHERE user_id = ${carId}`, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
@@ -55,8 +55,8 @@ Cars.getAll = result => {
 
 Cars.updateById = (id, car, result) => {
   sql.query(
-    "UPDATE cars SET email = ?, name = ?, active = ? WHERE id = ?",
-    [car.email, car.name, car.active, id],
+    "UPDATE cars SET user_id = ?, placa = ?, marca = ?, modelo = ? WHERE user_id = ?",
+    [id, car.placa, car.marca, car.modelo, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
@@ -77,7 +77,7 @@ Cars.updateById = (id, car, result) => {
 };
 
 Cars.remove = (id, result) => {
-  sql.query("DELETE FROM cars WHERE id = ?", id, (err, res) => {
+  sql.query("DELETE FROM cars WHERE user_id = ?", id, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
