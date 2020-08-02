@@ -1,5 +1,5 @@
 module.exports = app => {
-  const cars = require("");
+  const cars = require("../controllers/cars.controllers");
 
   // Create a new Car
   app.post("/cars", cars.create);
