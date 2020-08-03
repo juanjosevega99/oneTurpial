@@ -1,4 +1,5 @@
-Code challenge for OneTurpial's candidates.
+Code challenge for OneTurpial's candidates.  
+CRUD of persons - cars  
 ![](Preview.png)
 
 # Instructions
@@ -18,6 +19,9 @@ $ npm run start
 # backend
 $ npm run dev
 ```
+
+Preview Persons  
+![](Preview-Persons.png)
 
 ## Stay in touch
 
