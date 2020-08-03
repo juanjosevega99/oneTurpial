@@ -1,4 +1,4 @@
-Code challenge for OneTurpial's candidates.  
+# Code challenge for OneTurpial's candidates.  
 CRUD of persons - cars      
 
 ![](Preview.png)
@@ -9,20 +9,26 @@ Follow this steps in frontend and backend folder:
 ## Installation
 
 ```bash
+# Backend - Frontend
 $ npm install
 ```
 
 ## Running the app
 
 ```bash
-# frontend
-$ npm run start
-# backend
+# Frontend
+$ npm run start   
+
+# Backend
 $ npm run dev
 ```
 
-Preview Persons  
+## Preview Persons  
 ![](Preview-Persons.png)
+
+
+## Database Schema
+![](database-schema.png)
 
 ## Stay in touch
 
