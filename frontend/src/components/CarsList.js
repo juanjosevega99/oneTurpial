@@ -33,9 +33,9 @@ export default class CarsList extends Component {
                   </Link>
                 </div>
                 <div className="card-body">
-                  <p>{car.placa}</p>
-                  <p>{car.user_id}</p>
-                  <p>{car.marca}</p>
+                  <p>Placa: {car.placa}</p>
+                  <p>Marca: {car.marca}</p>
+                  <p>Id del dueño: {car.user_id}</p>
                 </div>
                 <div className="card-footer">
                   <button className="btn btn-danger" onClick={() => this.deleteCar(car.user_id)}>
