@@ -7,11 +7,13 @@ import Navigation from './components/Navigation'
 import CarsList from './components/CarsList'
 import CreateCar from './components/CreateCar'
 import CreateUser from './components/CreateUser'
+import Search from './components/Search'
 
 function App() {
   return (
     <Router>
       <Navigation />
+      <Search />
 
       <div className="container p-4">
         <Route path="/" exact component={CarsList} />

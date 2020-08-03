@@ -110,7 +110,7 @@ export default class CreateUser extends Component {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="birth_date"
+                  placeholder="birth date: 1999-05-09"
                   onChange={this.onInputChange}
                   name="birth_date"
                   value={this.state.birth_date}
