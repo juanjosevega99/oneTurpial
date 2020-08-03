@@ -6,6 +6,7 @@ import './App.css';
 import Navigation from './components/Navigation'
 import CarsList from './components/CarsList'
 import CreateCar from './components/CreateCar'
+import CreateUser from './components/CreateUser'
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
 
       <div className="container p-4">
         <Route path="/" exact component={CarsList} />
-        <Route path="/create" component={CreateCar} />
         <Route path="/edit/:id" component={CreateCar} />
+        <Route path="/create" component={CreateCar} />
+        <Route path="/user" component={CreateUser} />
       </div>
     </Router>
   );
